@@ -32,6 +32,17 @@ fetch('http://localhost:8000/user', {
 })
   .then((response) => response.json())
   .then((data) => console.log(data)); // {  username: 'admin', password: 'admin' }
+
+// axios
+axios({
+  method: 'GET',
+  url: "http://localhost:8000/user",
+  headers: {
+    'name-header': 'Nursultan',
+    'Content-Type': 'application/json',
+    'Authorization': 'wrgwrgwr'
+  }
+}).then((res) => console.log(res))
 ```
 **/posts**
 
@@ -45,11 +56,22 @@ fetch('http://localhost:8000/posts', {
 })
   .then((response) => response.json())
   .then((data) => console.log(data)); // {  id: '1', title: 'json-server', userId: '1' }
+
+// axios
+axios({
+  method: 'GET',
+  url: "http://localhost:8000/posts",
+  headers: {
+    'name-header': 'Nursultan',
+    'Content-Type': 'application/json',
+    'Authorization': 'wrgwrgwr'
+  }
+}).then((res) => console.log(res))
 ```
 **/comments**
 
 ```javascript
-fetch('http://localhost:8000/posts', {
+fetch('http://localhost:8000/comments', {
   headers: {
     'name-header': 'Nursultan',
     'Content-Type': 'application/json',
@@ -58,6 +80,17 @@ fetch('http://localhost:8000/posts', {
 })
   .then((response) => response.json())
   .then((data) => console.log(data)); // {  id: '1', body: 'json-server', postId: '1' }
+
+// axios
+axios({
+  method: 'GET',
+  url: "http://localhost:8000/comments",
+  headers: {
+    'name-header': 'Nursultan',
+    'Content-Type': 'application/json',
+    'Authorization': 'wrgwrgwr'
+  }
+}).then((res) => console.log(res))
 ```
 
 **/profile**
@@ -72,7 +105,39 @@ fetch('http://localhost:8000/profile', {
 })
   .then((response) => response.json())
   .then((data) => console.log(data)); // {  id: '1', body: 'json-server', postId: '1' }
+
+// axios
+axios({
+  method: 'GET',
+  url: "http://localhost:8000/profile",
+  headers: {
+    'name-header': 'Nursultan',
+    'Content-Type': 'application/json',
+    'Authorization': 'wrgwrgwr'
+  }
+}).then((res) => console.log(res))
 ```
 **/products**
 
-soon
+```javascript
+fetch('http://localhost:8000/products', {
+  headers: {
+    'name-header': 'Nursultan',
+    'Content-Type': 'application/json',
+    'Authorization': 'wrgwrgwr'
+  }
+})
+  .then((response) => response.json())
+  .then((data) => console.log(data)); // {  id: '1', title: 'iPhone 9', description: 'An apple mobile which is nothing like apple', price: 549 .... }
+
+// axios
+axios({
+  method: 'GET',
+  url: "http://localhost:8000/products",
+  headers: {
+    'name-header': 'Nursultan',
+    'Content-Type': 'application/json',
+    'Authorization': 'wrgwrgwr'
+  }
+}).then((res) => console.log(res))
+```
