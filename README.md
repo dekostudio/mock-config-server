@@ -23,6 +23,7 @@ Now you can make a request with an additional header and get the desired result
 **/users**
 
 ```javascript
+// fetch
 fetch('http://localhost:8000/user', {
   headers: {
     'name-header': 'Nursultan',
@@ -42,11 +43,12 @@ axios({
     'Content-Type': 'application/json',
     'Authorization': 'wrgwrgwr'
   }
-}).then((res) => console.log(res))
+}).then((res) => console.log(res)); // {  username: 'admin', password: 'admin' }
 ```
 **/posts**
 
 ```javascript
+// fetch
 fetch('http://localhost:8000/posts', {
   headers: {
     'name-header': 'Nursultan',
@@ -66,11 +68,12 @@ axios({
     'Content-Type': 'application/json',
     'Authorization': 'wrgwrgwr'
   }
-}).then((res) => console.log(res))
+}).then((res) => console.log(res)); // {  id: '1', title: 'json-server', userId: '1' }
 ```
 **/comments**
 
 ```javascript
+// fetch
 fetch('http://localhost:8000/comments', {
   headers: {
     'name-header': 'Nursultan',
@@ -90,12 +93,13 @@ axios({
     'Content-Type': 'application/json',
     'Authorization': 'wrgwrgwr'
   }
-}).then((res) => console.log(res))
+}).then((res) => console.log(res)); // {  id: '1', body: 'json-server', postId: '1' }
 ```
 
 **/profile**
 
 ```javascript
+// fetch
 fetch('http://localhost:8000/profile', {
   headers: {
     'name-header': 'Nursultan',
@@ -115,11 +119,12 @@ axios({
     'Content-Type': 'application/json',
     'Authorization': 'wrgwrgwr'
   }
-}).then((res) => console.log(res))
+}).then((res) => console.log(res)); // {  id: '1', body: 'json-server', postId: '1' }
 ```
 **/products**
 
 ```javascript
+// fetch
 fetch('http://localhost:8000/products', {
   headers: {
     'name-header': 'Nursultan',
@@ -139,5 +144,5 @@ axios({
     'Content-Type': 'application/json',
     'Authorization': 'wrgwrgwr'
   }
-}).then((res) => console.log(res))
+}).then((res) => console.log(res)); // {  id: '1', title: 'iPhone 9', description: 'An apple mobile which is nothing like apple', price: 549 .... }
 ```
